@@ -1,0 +1,113 @@
+.home,.home1{
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("backround.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+.home{
+    color: white;
+}
+.sect{
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+h1, p, .home1 {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.home1 {
+    color: #ffcc00; 
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.home1:hover {
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: -3px;
+    animation: none !important;
+    position: relative;
+}
+
+
+footer {
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: transparent; /* No background */
+}
+
+.footer-container a {
+    color: rgba(0, 0, 0, 0.6); /* Dark gray icons */
+    font-size: 24px; /* Adjust icon size */
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.footer-container a:hover {
+    color: white; /* Darker on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+h1{
+    animation: fadeIn 1.5s ease-in-out;
+}
+p{
+    animation: fadeIn 1.5s ease-in-out;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.home1 {
+    animation: fadeIn 1.5s ease-in-out;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Ensures smooth scaling */
+}
+
+.home1:hover {
+    transform: scale(1.1);
+}
