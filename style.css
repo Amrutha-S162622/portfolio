@@ -21,7 +21,7 @@ body{
 }
 .sect{
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,37 +48,30 @@ h1, p, .home1 {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    padding: -3px;
-    animation: none !important;
-    position: relative;
-}
-
-
-footer {
     padding: 15px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: transparent; /* No background */
+     
+}
+.footer-container a {
+    font-size: 24px;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.footer-container a {
-    color: rgba(0, 0, 0, 0.6); /* Dark gray icons */
-    font-size: 24px; /* Adjust icon size */
-    margin: 0 15px;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
+
+
+.instagram { background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.linkedin { color: #0077B5; } 
+.email {color: #D14836;}
+
 
 .footer-container a:hover {
-    color: white; /* Darker on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    transform: scale(1.2); 
 }
+
 
 @keyframes fadeIn {
     from {
@@ -105,7 +98,7 @@ p{
     opacity: 0;
     animation-fill-mode: forwards;
     display: inline-block;
-    transition: transform 0.3s ease-in-out; /* Ensures smooth scaling */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .home1:hover {
