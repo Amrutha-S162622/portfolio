@@ -78,3 +78,33 @@ footer {
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);
 }
+.about h2{
+     color: white;
+}
+.about {
+    color: white;
+}
+.experience h2{
+    color: white;
+}
+.experience h3{
+    color: white;
+}
+.experience ul{
+    color: white;
+}
+.skill{
+    color: white;
+}
+.education{
+    color: white;
+}
+.certifications{
+    color: white;
+}
+.achievements{
+    color: white;
+}
+.contact{
+    color: white;
+}
